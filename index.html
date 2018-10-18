@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<title>Steven Weber</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+    body,
+    html {
+        height: 100%;
+        font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: screen;
+        background-color: blue;
+        background-image: url("images/P5170357.jpg");
+        min-height: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+</style>
+
+<body>
+
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">STEVEN WEBER</a>
+            </div> 
+            <div class="w3-col s3">
+                <a href="#cv" class="w3-button w3-block w3-black">PROGRAMMIERUNG</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#cv" class="w3-button w3-block w3-black">RADTOUREN</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">FOTOGRAFIE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Radtour in Norwegen</span>
+        </div>
+        <div class="w3-display w3-center">
+            <span class="w3-text-white" style="font-size:90px">Steven Weber</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">10. MAI 2018</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64">
+                    <span class="w3-tag w3-wide">STEVEN WEBER</span>
+                </h5>
+                <h5 class="w3-center w3-padding-48">Über mich</h5>
+                <!-- <p>I'm a developer and consultant for (software) solutions in .Net and SAP. After studying Computer Sciences
+                    and Communication Engineering at Saarbrücken, i joined a company in the same town. Now i am consulting
+                    companies and develop solutions in the context of the Industry 4.0 movement.</p> -->
+                <p>Bereits seit meinem Studium der Kommunikationsinformatik arbeite ich in einem international tätigen Beratungsunternehmen
+                    für Softwarelösungen auf Basis von Microsoft und SAP. Im speziellen beschäftige ich mich hier mit der
+                    Beratung und Entwicklung von Lösungen für mittelständige Unternehmen im Kontext von Industrie 4.0.</p>
+                <p>Privat beschäftige ich mich ebenfalls gerne mit Softwareentwicklung, aber auch mit Fotografie und Radreisen.</p>
+                <!-- <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p>
+                        <i>"Das Internet ist für uns alle Neuland"</i>
+                    </p>
+                    <p>Angela Merkel (Bundeskanzlerin), 2013</p>
+                </div> -->
+
+
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="cv">
+            <div class="w3-content" style="max-width:700px">
+
+                <h3 class="w3-center w3-padding-48">CV</h3>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Programmierung');" id="myLink">
+                        <div class="w3-col s6 tablink">Programmierung</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Technologien');">
+                        <div class="w3-col s6 tablink">Technologien</div>
+                    </a>
+                </div>
+
+                <div id="Programmierung" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>C#, .NET</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:75%"></div>
+                    </div>
+                    <br>
+
+                    <h5>Abap</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:50%"></div>
+                    </div>
+                    <br>
+
+                    <h5>Javascript</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:25%"></div>
+                    </div>
+                    <br>
+
+                    <h5>C</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:25%"></div>
+                    </div>
+                    <br>
+
+                    <h5>C++</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:25%"></div>
+                    </div>
+                    <br>
+
+
+                    <h5>Java</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:25%"></div>
+                    </div>
+                    <br>
+
+                    <br>
+                </div>
+
+                <div id="Technologien" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Visual Studio</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:100%"></div>
+                    </div>
+                    <br>
+
+                    <h5>Jira</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:75%"></div>
+                    </div>
+                    <br>
+
+                    <h5>Git(hub)</h5>
+                    <div class="w3-border">
+                        <div class="w3-grey" style="height:14px;width:75%"></div>
+                    </div>
+                    <br>
+
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-container" id="programmierung">
+                <h5 class="w3-center w3-padding-64">
+                        <span class="w3-tag w3-wide">PROGRAMMIERUNG</span>
+                    </h5>
+        </div>
+        <div class="w3-container" id="programmierung">
+                <h5 class="w3-center w3-padding-64">
+                        <span class="w3-tag w3-wide">RADTOUREN</span>
+                    </h5>
+        </div>        <div class="w3-container" id="programmierung">
+                <h5 class="w3-center w3-padding-64">
+                        <span class="w3-tag w3-wide">FOTOGRAFIE</span>
+                    </h5>
+        </div>
+        <br/>
+
+
+
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <div class="w3-display-container">
+                    <img src="images/raute.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                    <div class="w3-display-bottommiddle w3-container" style="color: white">"Das Internet ist für uns alle Neuland", Angela Merkel - 2013</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Powered by
+            <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+        </p>
+    </footer>
+
+    <!-- Add Google Maps -->
+    <script>
+        function myMap() {
+            myCenter = new google.maps.LatLng(41.878114, -87.629798);
+            var mapOptions = {
+                center: myCenter,
+                zoom: 12, scrollwheel: false, draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+            marker.setMap(map);
+        }
+
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+
+</html>
